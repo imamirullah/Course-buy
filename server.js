@@ -12,7 +12,7 @@ const JWT_SECRET = process.env.JWT_SECRET || 'secret123haiyeh';
 
  
 
-app.use(cors('*'));
+app.use(cors({ origin: '*' })); // For development
 
 app.use(bodyParser.json());
 
